@@ -26,7 +26,7 @@
     -->
     <title>React App</title>
   </head>
-  <body>
+  <body id="app" style="background-color: black">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -39,5 +39,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load("app", "particlesjs-config.json");
+    </script>
   </body>
 </html>
