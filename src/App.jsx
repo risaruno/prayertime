@@ -1,9 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "./scss/main.scss";
 
 function App() {
   const [prayerTimes, setPrayerTimes] = useState({});
-  const selected = ["Imsak", "Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+  const [time, setTime] = useState(new Date());
+
+  const selected = {
+    // Imsak: "Imsak",
+    Fajr: "Subuh",
+    Dhuhr: "Dzuhur",
+    Asr: "Ashar",
+    Maghrib: "Maghrib",
+    Isha: "Isya",
+  };
 
   const getPrayerTime = async () => {
     const response = await fetch(
@@ -11,26 +21,49 @@ function App() {
     );
     const data = await response.json();
     const getPrayerTimes = data.data.timings;
-    selected.forEach((item) => {
+    Object.entries(selected).map(([vKey, vValue]) => {
       Object.entries(getPrayerTimes).map(([key, value]) => {
-        if (item === key) {
-          setPrayerTimes((prev) => ({ ...prev, [key]: value }));
+        if (vKey === key) {
+          setPrayerTimes((prev) => ({ ...prev, [vValue]: value }));
         }
       });
     });
   };
+
+  const refreshDateTime = () => {
+    setTime(new Date());
+  };
+
   useEffect(() => {
+    setInterval(refreshDateTime, 1000);
     getPrayerTime();
   }, []);
 
   return (
     <div className="App" id="App">
+      <div className="dateTime">
+        <div className="date">
+          {time.toLocaleString("id-ID", {
+            timeZone: "Asia/Jakarta",
+            weekday: "long",
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+          })}
+        </div>
+        <div className="clock">
+          {time.toLocaleString("id-ID", {
+            timeZone: "Asia/Jakarta",
+            hour: "numeric",
+            minute: "numeric",
+          })}
+        </div>
+      </div>
       <div className="schedule">
         {Object.entries(prayerTimes).map(([key, value]) => {
           return (
-            <div key={key}>
+            <div className="timeBox" key={key}>
               <span className="title">{key}</span>
-              <span> : </span>
               <span className="time">{value}</span>
             </div>
           );
