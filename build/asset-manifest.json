@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/prayertime/static/css/main.62b0bc18.css",
+    "main.js": "/prayertime/static/js/main.dc38987f.js",
+    "index.html": "/prayertime/index.html",
+    "main.62b0bc18.css.map": "/prayertime/static/css/main.62b0bc18.css.map",
+    "main.dc38987f.js.map": "/prayertime/static/js/main.dc38987f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62b0bc18.css",
+    "static/js/main.dc38987f.js"
+  ]
+}
