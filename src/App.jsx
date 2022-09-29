@@ -34,6 +34,9 @@ function App() {
 
   const refreshDateTime = () => {
     setTime(new Date());
+    if (time.getMinutes() === 0) {
+      getPrayerTime();
+    }
   };
 
   useEffect(() => {
