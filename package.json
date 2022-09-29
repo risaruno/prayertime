@@ -1,7 +1,7 @@
 {
-  "homepage": "https://risaruno.github.io/prayertime/",
   "name": "praytime",
   "version": "0.1.0",
+  "homepage": "https://risaruno.github.io/prayertime/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
