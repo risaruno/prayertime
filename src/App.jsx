@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "./scss/main.scss";
+import "particles.js";
+import locIcon from "./svg/location.svg";
 
 function App() {
   const [prayerTimes, setPrayerTimes] = useState({});
@@ -37,6 +39,7 @@ function App() {
   useEffect(() => {
     setInterval(refreshDateTime, 1000);
     getPrayerTime();
+    window.particlesJS.load("particles-js", "particlesjs-config.json");
   }, []);
 
   return (
@@ -57,6 +60,10 @@ function App() {
             hour: "numeric",
             minute: "numeric",
           })}
+        </div>
+        <div className="location">
+          <img src={locIcon} alt="Location" className="icon" />
+          <span className="text">Rancaekek, Indonesia</span>
         </div>
       </div>
       <div className="schedule">
