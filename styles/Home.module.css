@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  color: white;
 }
 
 .main {
@@ -61,6 +62,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
+  color: black;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
@@ -70,37 +72,57 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
   margin: 1rem;
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+  min-width: 150px;
   max-width: 300px;
 }
 
-.card:hover,
+/* .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
+  color: #00ff85;
+  border-color: #00ff85;
+} */
 
-.card h2 {
+.prayer {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
 }
 
-.card p {
+.time {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 3.5rem;
   line-height: 1.5;
+}
+
+.glass {
+  background: linear-gradient(
+    218.99deg,
+    rgba(255, 255, 255, 0.2) 4.42%,
+    rgba(255, 255, 255, 0) 85.6%
+  );
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+.glass:hover,
+.glass:focus,
+.glass:active {
+  background: linear-gradient(188.99deg, #00ff842a, #00ff849f);
 }
 
 .logo {
@@ -115,7 +137,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .card,
   .footer {
     border-color: #222;
@@ -126,4 +148,4 @@
   .logo img {
     filter: invert(1);
   }
-}
+} */
