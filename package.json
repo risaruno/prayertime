@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "gsap": "^3.11.3",
     "next": "12.3.1",
     "particles.js": "^2.0.0",
