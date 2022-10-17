@@ -6,13 +6,13 @@ import location from "../public/icons/Location.png";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container mx-auto">
       <Head>
         <title>Prayer Time</title>
         <meta name="description" content="Prayer Time Web Application" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container">
+      <div className="">
         <main className="flex flex-col justify-between min-h-screen py-24 text-white">
           <div className="flex flex-col items-start justify-center px-16 gap-4">
             <div className="flex flex-col items-start px-2">
@@ -39,33 +39,33 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-10">
-            <div className="card glass">
-              <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <div className="card">
+              <div className="glass">
                 <div className="text-3xl">Subuh</div>
                 <div className="text-5xl">5:00</div>
               </div>
             </div>
-            <div className="card glass">
-              <div className="flex flex-col items-center justify-center gap-4">
+            <div className="card">
+              <div className="glass">
                 <div className="text-3xl">Dzuhur</div>
                 <div className="text-5xl">12:00</div>
               </div>
             </div>
-            <div className="card glass">
-              <div className="flex flex-col items-center justify-center gap-4">
+            <div className="card">
+              <div className="glass">
                 <div className="text-3xl">Ashar</div>
                 <div className="text-5xl">15:00</div>
               </div>
             </div>
-            <div className="card glass">
-              <div className="flex flex-col items-center justify-center gap-4">
+            <div className="card">
+              <div className="glass">
                 <div className="text-3xl">Magrib</div>
                 <div className="text-5xl">18:00</div>
               </div>
             </div>
-            <div className="card glass">
-              <div className="flex flex-col items-center justify-center gap-4">
+            <div className="card">
+              <div className="glass">
                 <div className="text-3xl">Isya</div>
                 <div className="text-5xl">19:00</div>
               </div>

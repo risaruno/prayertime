@@ -149,19 +149,20 @@ a {
 } */
 
 .card {
-  @apply p-5 aspect-w-3 aspect-h-2;
+  @apply lg:w-56;
   min-width: 225px;
   min-height: 150px;
 }
 
 .glass {
+  @apply flex flex-col items-center justify-center flex-wrap gap-4 p-5;
   background: linear-gradient(
       324.78deg,
       rgba(255, 255, 255, 0) 1.95%,
       rgba(255, 255, 255, 0.31) 107.98%
     ),
     rgba(58, 58, 58, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(21px);
   /* Note: backdrop-filter has minimal browser support */
 
