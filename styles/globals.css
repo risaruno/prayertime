@@ -3,130 +3,21 @@
 @tailwind utilities;
 
 /* Poppins Family */
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Black.ttf");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-BlackItalic.ttf");
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-ExtraBold.ttf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-ExtraBoldItalic.ttf");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Bold.ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-BoldItalic.ttf");
-  font-weight: 700;
-  font-style: italic;
-}
 @font-face {
   font-family: "Poppins";
   src: url("../public/fonts/Poppins/Poppins-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-SemiBoldItalic.ttf");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Medium.ttf");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-MediumItalic.ttf");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Regular.ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Italic.ttf");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Light.ttf");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-LightItalic.ttf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-ExtraLight.ttf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-Thin.ttf");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("../public/fonts/Poppins/Poppins-ThinItalic.ttf");
-  font-weight: 100;
-  font-style: italic;
-}
 
 html,
 body {
-  @apply w-full h-full;
+  @apply w-full h-max Maghrib;
   padding: 0;
   margin: 0;
   font-family: -apple-system, Poppins, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 600;
-  background: linear-gradient(
-    #11181e 0%,
-    #2b6499 53.58%,
-    #80a4be 88.02%,
-    #ffe9b1 100%
-  );
 }
 
 a {
@@ -155,7 +46,7 @@ a {
 }
 
 .glass {
-  @apply flex flex-col items-center justify-center flex-wrap gap-4 p-5;
+  @apply flex flex-col items-center justify-center flex-wrap gap-4 p-5 backdrop-blur-md;
   background: linear-gradient(
       324.78deg,
       rgba(255, 255, 255, 0) 1.95%,
@@ -163,8 +54,6 @@ a {
     ),
     rgba(58, 58, 58, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  backdrop-filter: blur(21px);
-  /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 15px;
   color: white;
@@ -175,3 +64,89 @@ a {
 .glass:active {
   background: linear-gradient(188.99deg, #00ff842a, #00ff849f);
 }
+
+/* Background Image */
+
+.MidnightToSubh {
+  background: linear-gradient(180deg, #11181e 0%, #0c2841 100%);
+}
+
+.AfterSubh {
+  background: linear-gradient(180deg, #11181e 0%, #154a7b 100%);
+}
+
+.Syurk {
+  background: linear-gradient(
+    #11181e 0%,
+    #2b6499 53.58%,
+    #80a4be 88.02%,
+    #ffe9b1 100%
+  );
+}
+
+.Dhuha {
+  background: linear-gradient(180deg, #69b7ff 0%, #99cff4 58.85%, #fffbf1 100%);
+}
+
+.IntoDzuhur {
+  background: linear-gradient(180deg, #6db9ff 0%, #bddfff 80.21%);
+}
+
+.DzuhurToAshar {
+  background: linear-gradient(180deg, #5cb1ff 0%, #88c5fd 102.39%);
+}
+
+.AfterAshar {
+  background: linear-gradient(180deg, #5ab0ff 0%, #c8e3fc 100%);
+}
+
+.IntoMaghrib {
+  background: linear-gradient(180deg, #4597e2 0%, #fff8de 84.37%);
+}
+
+.BeforeMaghrib {
+  background: linear-gradient(180deg, #276AA8 0%, #83B8E9 75%, #FFE6A7 100%);
+}
+
+.Maghrib {
+  background: linear-gradient(180deg, #123C63 23.75%, #31689A 69.79%, #ABD7FF 85.94%, #FFE297 100%);
+}
+
+.AfterMaghrib {
+  background: linear-gradient(180deg, #051728 0%, #123C63 72.92%, #3779B7 100%);
+}
+
+.IsyaToMidnight {
+  background: linear-gradient(180deg, #091622 15.1%, #0B1F32 100%);
+}
+
+/* Weather Background */
+
+.Sunny {
+  background: linear-gradient(180deg, #f7b733 0%, #fc4a1a 100%);
+}
+
+.Cloudy {
+  background: linear-gradient(180deg, #d7d2cc 0%, #304352 100%);
+}
+
+.Rainy {
+  background: linear-gradient(180deg, #00c6fb 0%, #005bea 100%);
+}
+
+.Thunder {
+  background: linear-gradient(180deg, #00ecbc 0%, #007adf 100%);
+}
+
+.Snowy {
+  background: linear-gradient(180deg, #83a4d4 0%, #b6fbff 100%);
+}
+
+.Windy {
+  background: linear-gradient(180deg, #acb6e5 0%, #86fde8 100%);
+}
+
+.Foggy {
+  background: linear-gradient(180deg, #bdc3c7 0%, #2c3e50 100%);
+}
+
