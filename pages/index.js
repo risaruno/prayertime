@@ -5,7 +5,7 @@ import weather from "../public/icons/weathers/01n.png";
 import location from "../public/icons/Location.png";
 
 //component
-import PrayerTimeContainer from "./components/prayerTimeContainer/prayerTimeContainer";
+import PrayerTimeContainer from "./components/PrayerTimeContainer/PrayerTimeContainer";
 
 export default function Home() {
   const [time, setTime] = useState(new Date());

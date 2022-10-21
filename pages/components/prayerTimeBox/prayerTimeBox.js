@@ -1,5 +1,11 @@
-export default function PrayerTimeBox({ prayerTimes }) {
-  return Object.entries(prayerTimes).map(([key, value]) => {
+import { useContext } from "react";
+import { PrayerTimeContext } from "../../context/PrayerTimeContext";
+
+
+export default function PrayerTimeBox() {
+  const PrayerTimes = useContext(PrayerTimeContext);
+  
+  return Object.entries(PrayerTimes).map(([key, value]) => {
     return (
       <div className="card" key={key}>
         <div className="glass">
