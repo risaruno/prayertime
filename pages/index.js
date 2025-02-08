@@ -33,14 +33,14 @@ export default function Home() {
             <div className="flex flex-col items-start px-2">
               <h1 className="text-7xl">
                 {time.toLocaleString("id-ID", {
-                  timeZone: "Asia/Jakarta",
+                  timeZone: "Asia/Seoul",
                   hour: "numeric",
                   minute: "numeric",
                 })}
               </h1>
               <h6 className="text-2xl">
                 {time.toLocaleString("id-ID", {
-                  timeZone: "Asia/Jakarta",
+                  timeZone: "Asia/Seoul",
                   weekday: "long",
                   month: "long",
                   day: "numeric",
@@ -62,7 +62,7 @@ export default function Home() {
                   <div className="relative basis-8">
                     <Image src={location} alt="location" />
                   </div>
-                  <p>Rancaekek, Indonesia</p>
+                  <p>Seoul, South Korea</p>
                 </div>
               </div>
             </div>
